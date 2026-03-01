@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU+Guides&display=swap");
+#container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 0 5%;
+	width: 100vw;
+	height: 12vh;
+	background-color: blue;
+	
+}
+
+#logo {
+	font-family:
+		Archivo Black,
+		sans-serif;
+	color: white;
+	width: 40%;
+}
+#logo img {
+	width: 130px;
+}
+#navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+	padding: 0 3% 0 6%;
+	/* background-color: red; */
+	color: white;
+}
+#profile {
+	width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#profile img {
+	height: 50px;
+    width: 50px;
+    border: solid white 2px;
+	border-radius: 50%;
+}
+#navigator {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+ul li {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 50px;
+	/* background-color: red; */
+	font-family: "Montserrat", sans-serif;
+	border-bottom: solid blue 2px;
+	position: relative;
+    opacity: 1;
+}
+ul li::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: linear-gradient(to right,grey,white);
+	transition: width 0.3s ease;
+}
+li:hover {
+	cursor: pointer;
+	color: white;
+    font-weight: bold;
+	opacity: 1;
+    animation: changeOpacity 0.5s;
+}
+li:hover::after {
+	width: 100%;
+}
+
+@keyframes changeOpacity {
+	0% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes changeopacity {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
