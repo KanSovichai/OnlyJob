@@ -84,6 +84,7 @@ const home = () => {
                 <img id="hero-image" src="../src/assets/humans.png" alt="" />
             </div>
 		</main>
+		
 	);
 };
 export default home;

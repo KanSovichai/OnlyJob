@@ -1,0 +1,22 @@
+#body {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10%; 
+    background-image: url(./src/assets/bg-post.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#posted-job-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #F7F3BE;
+    opacity: 0.75;
+    /* position: absolute; */
+    width: 80%;
+    height: 40%;
+}
