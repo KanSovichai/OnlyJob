@@ -38,10 +38,11 @@
     justify-content: end;
     align-items: center;
 }
-#profile img {
+#profile svg {
 	height: 50px;
     width: 50px;
     border: solid white 2px;
+	padding: 5px;
 	border-radius: 50%;
 }
 #navigator {
